@@ -23,11 +23,11 @@ end
 plugin "resource_controller", :git => "git://github.com/giraffesoft/resource_controller.git"
 rake  "gems:install"
 
+git :init
+
 generate :controller, "pages"
 route "map.root :controller => 'pages'"
 git :rm => 'public/index.html'
-
-git :init
 
 file ".gitignore", <<-END
 .DS_Store
