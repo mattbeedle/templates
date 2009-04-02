@@ -1,4 +1,4 @@
-load_template "http://github.com/mattbeedle/templates/raw/master/base_template.rb"
+load_template "http://github.com/mattbeedle/templates/raw/master/base.rb"
 
 gem 'authlogic',  :lib => 'authlogic'
 name = ask("What do you want your user to be called")
