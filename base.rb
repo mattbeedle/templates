@@ -23,6 +23,8 @@ end
 plugin "resource_controller", :git => "git://github.com/giraffesoft/resource_controller.git"
 rake  "gems:install"
 
+generate :cucumber
+
 git :init
 
 generate :controller, "pages"
