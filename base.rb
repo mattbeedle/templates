@@ -1,4 +1,6 @@
 run "echo TODO > README"
+run "touch cucumber.yml"
+run "echo autotest: features -r features --format pretty --color > cucumber.yml"
 
 gem   'thoughtbot-factory_girl',  :lib => 'factory_girl',   :source => "gems.github.com"
 gem   'mislav-will_paginate',     :lib => 'will_paginate',  :source => "gems.github.com"
