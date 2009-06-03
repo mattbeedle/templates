@@ -21,7 +21,7 @@ if yes?("Do you want to use rspec")
 else
   gem   'thoughtbot-shoulda',       :lib => "shoulda",        :source => "gems.github.com"
   gem   'seanhussey-woulda',        :lib => "woulda",         :source => "gems.github.com"
-  touch "test/factories.rb"
+  run "touch test/factories.rb"
 end
 
 plugin "resource_controller", :git => "git://github.com/giraffesoft/resource_controller.git"
